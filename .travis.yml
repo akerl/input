@@ -1,0 +1,10 @@
+sudo: required
+dist: xenial
+services:
+- docker
+script: make
+notifications:
+  email: false
+  slack:
+    rooms:
+      secure: rC3OwOfFVWL6gs97mLH7K7TDLy7dOkN43y84FIPh7rX8pyfbuEk7LsCzYODa+FHUn/A8zFSRrX67zqDJf+xC60E4k+yGTpO4gy3xHaNUr05w5UADZKreQPcW5/hYo390ZLeSMNCdICCMWAGWeoVor4o3O1QekQxD3xnDjSQfM3hJayYT70cuJebEGplAWC9fKpnu2JX0rfvf+DhI+a+nErGZNFkUldcduv8vt+aLIt71XGD7SgKUiX3qQWFhQkZmm14mKhhaMfZAj/Qo3wFKgmVfzs8CAJScTPedjuO6xAVVvapJTdw3iVPwX8gskzfJELPN3O8vUE/8V1+kFDpcEJfnZux/+6yOZlHB0x6kEIIh293eCXFij+7cq4GD0EfP7cABY2n0Vf9y9uQGRU4bBVLaUIkc6P2cVK5NwfH9ne3YZM4N8vgctNcWgdXtl1c9kPA9GrzAseeaclsuQvOqoP3GxYuUet0KW83EO9OUmWfacoE6ZazA1NpyvZSPwXMfGQo/fm3TtMySPgtIi+yHng5blqu/H2M6LzY1ECpfaTg2EJF1aESYJSWDD8VjDwhGU8+XYTSLaQt1A584tAh0uh1avcOVP9H26c6nZsFUNmE/oKInYN1T06D69jLN8gZo40tAoaQ60ZonPD2lyAUPWyiGG67xOROa3mxjVJMm/II=
