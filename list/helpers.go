@@ -7,7 +7,9 @@ import (
 
 // WithInputString returns either the pre-provided selection or the result of a user prompt
 func WithInputString(p Prompt, options []string, val, msg string) (string, error) {
+	logger.InfoMsg("running WithInputString helper")
 	if val != "" {
+		logger.DebugMsgf("value provided: %s", val)
 		for _, item := range options {
 			if item == val {
 				return val, nil
@@ -16,6 +18,7 @@ func WithInputString(p Prompt, options []string, val, msg string) (string, error
 		return "", fmt.Errorf("user provided selection not found: %s", val)
 	}
 	if len(options) == 1 {
+		logger.DebugMsgf("only one option provided: %s", options[0])
 		return options[0], nil
 	}
 
@@ -34,10 +37,13 @@ func WithInputString(p Prompt, options []string, val, msg string) (string, error
 // WithInputSlice filters options based on a provided slice and then performs a
 // WithInputString prompt
 func WithInputSlice(p Prompt, options, list []string, msg string) (string, error) {
+	logger.InfoMsg("running WithInputSlice helper")
 	switch len(list) {
 	case 0:
+		logger.DebugMsg("empty input list provided")
 		return WithInputString(p, options, "", msg)
 	case 1:
+		logger.DebugMsg("single-item input list provided")
 		return WithInputString(p, options, list[0], msg)
 	default:
 		var matchList []string

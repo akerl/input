@@ -3,7 +3,11 @@ package list
 import (
 	"sort"
 	"strings"
+
+	"github.com/akerl/timber/v2/log"
 )
+
+var logger = log.NewLogger("input")
 
 // Option defines a single option for a list prompt
 type Option struct {

@@ -3,6 +3,7 @@ module github.com/akerl/input
 go 1.12
 
 require (
+	github.com/akerl/timber/v2 v2.0.0
 	github.com/daviddengcn/go-colortext v0.0.0-20180409174941-186a3d44e920 // indirect
 	github.com/dixonwille/wmenu v4.0.2+incompatible
 	github.com/google/go-cmp v0.3.1 // indirect

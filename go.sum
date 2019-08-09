@@ -1,3 +1,5 @@
+github.com/akerl/timber/v2 v2.0.0 h1:WPhPh/C8C1yOhlt5TwpLcvX3SLaIVWzHTHqbGwVCjjk=
+github.com/akerl/timber/v2 v2.0.0/go.mod h1:jBjRGI2CWuvbZlrZkp1JO/X51pMlbg72NFy+Vnd59oI=
 github.com/daviddengcn/go-colortext v0.0.0-20180409174941-186a3d44e920 h1:d/cVoZOrJPJHKH1NdeUjyVAWKp4OpOT+Q+6T1sH7jeU=
 github.com/daviddengcn/go-colortext v0.0.0-20180409174941-186a3d44e920/go.mod h1:dv4zxwHi5C/8AeI+4gX4dCWOIvNi7I6JCSX0HvlKPgE=
 github.com/dixonwille/wmenu v4.0.2+incompatible h1:lxrPJsx9LpdUFD5T+dOfl6gPKLbBmiAtEdACLT1I2/w=
@@ -12,6 +14,7 @@ github.com/mattn/go-runewidth v0.0.4 h1:2BvfKmzob6Bmd4YsL0zygOqfdFnK7GR4QL06Do4/
 github.com/mattn/go-runewidth v0.0.4/go.mod h1:LwmH8dsx7+W8Uxz3IHJYH5QSwggIsqBzpuz5H//U1FU=
 github.com/nsf/termbox-go v0.0.0-20190121233118-02980233997d h1:x3S6kxmy49zXVVyhcnrFqxvNVCBPb2KZ9hV2RBdS840=
 github.com/nsf/termbox-go v0.0.0-20190121233118-02980233997d/go.mod h1:IuKpRQcYE1Tfu+oAQqaLisqDeXgjyyltCfsaoYN18NQ=
+github.com/nsf/termbox-go v0.0.0-20190624072549-eeb6cd0a1762 h1:44Lv0bNi88GweB54TCjB/lEJgp+2Ze5WFpwNu0nh0ag=
 github.com/nsf/termbox-go v0.0.0-20190624072549-eeb6cd0a1762/go.mod h1:IuKpRQcYE1Tfu+oAQqaLisqDeXgjyyltCfsaoYN18NQ=
 github.com/pkg/errors v0.8.1 h1:iURUrRGxPUNPdy5/HRSm+Yj6okJ6UtLINN0Q9M4+h3I=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=

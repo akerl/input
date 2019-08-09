@@ -11,6 +11,7 @@ type WmenuPrompt struct{}
 
 // Execute runs the list prompt
 func (w WmenuPrompt) Execute(msg string, optSet OptionSet) (int, error) {
+	logger.InfoMsg("executing wmenu prompt")
 	c := make(chan int, 1)
 
 	menu := wmenu.NewMenu(msg)

@@ -11,6 +11,7 @@ type FuzzyPrompt struct{}
 
 // Execute runs the list prompt
 func (f FuzzyPrompt) Execute(_ string, os OptionSet) (int, error) {
+	logger.InfoMsg("executing fuzzy prompt")
 	lines := make([]bool, len(os))
 	return fuzzyfinder.Find(lines, func(i int) string {
 		return os[i].String()
