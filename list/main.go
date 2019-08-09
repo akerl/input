@@ -18,6 +18,7 @@ var Types = map[string]func() Prompt{
 	"fuzzy": func() Prompt { return FuzzyPrompt{} },
 }
 
+// Default returns the default Prompt type
 func Default() Prompt {
 	return Types[""]()
 }
