@@ -30,6 +30,7 @@ type Prompt interface {
 	Execute(string, OptionSet) (int, error)
 }
 
+// String condenses the Name and Metadata into a single flat string
 func (o Option) String() string {
 	var str strings.Builder
 	str.WriteString(o.Name)
