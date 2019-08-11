@@ -44,7 +44,7 @@ func (o Option) String() string {
 	index := 0
 	for k := range o.Metadata {
 		keys[index] = k
-		index += 1
+		index++
 	}
 	sort.Strings(keys)
 
