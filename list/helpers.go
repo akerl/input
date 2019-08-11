@@ -36,18 +36,18 @@ func WithInputString(p Prompt, options []string, val, msg string) (string, error
 
 // WithInputSlice filters options based on a provided slice and then performs a
 // WithInputString prompt
-func WithInputSlice(p Prompt, options, list []string, msg string) (string, error) {
+func WithInputSlice(p Prompt, options, filterList []string, msg string) (string, error) {
 	logger.InfoMsg("running WithInputSlice helper")
-	switch len(list) {
+	switch len(filterList) {
 	case 0:
 		logger.DebugMsg("empty input list provided")
 		return WithInputString(p, options, "", msg)
 	case 1:
 		logger.DebugMsg("single-item input list provided")
-		return WithInputString(p, options, list[0], msg)
+		return WithInputString(p, options, filterList[0], msg)
 	default:
 		var matchList []string
-		for _, item := range list {
+		for _, item := range filterList {
 			for _, option := range options {
 				if option == item {
 					matchList = append(matchList, item)
