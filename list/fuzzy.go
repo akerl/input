@@ -1,6 +1,7 @@
 package list
 
 import (
+	"github.com/gdamore/tcell/termbox"
 	"github.com/ktr0731/go-fuzzyfinder"
 )
 
@@ -20,5 +21,6 @@ func (f FuzzyPrompt) Execute(msg string, os OptionSet) (int, error) {
 		lines,
 		handler,
 		fuzzyfinder.WithPromptString(msg+": "),
+		fuzzyfinder.WithPromptColor(termbox.ColorDefault),
 	)
 }
