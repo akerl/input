@@ -12,13 +12,13 @@ func (f FuzzyPrompt) Execute(msg string, os OptionSet) (int, error) {
 	logger.InfoMsg("executing fuzzy prompt")
 	lines := make([]bool, len(os))
 
-	handler = func(i int) string {
+	handler := func(i int) string {
 		return os[i].String()
 	}
 
 	return fuzzyfinder.Find(
 		lines,
 		handler,
-		fuzzyfiner.WithPromptString(msg),
+		fuzzyfinder.WithPromptString(msg+": "),
 	)
 }
