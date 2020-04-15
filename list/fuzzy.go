@@ -17,6 +17,7 @@ func (f FuzzyPrompt) Execute(msg string, os OptionSet) (int, error) {
 		return os[i].String()
 	}
 
+	defer fuzzyquirks()
 	return fuzzyfinder.Find(
 		lines,
 		handler,
