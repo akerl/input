@@ -1,4 +1,4 @@
-// build darwin
+// +build darwin
 
 package list
 
@@ -27,7 +27,7 @@ func fuzzyquirks() {
 	kb, err := keybd_event.NewKeyBonding()
 	if err != nil {
 		logger.InfoMsgf("failed to get key bonding: %s", err)
-		return err
+		return
 	}
 	kb.SetKeys(keybd_event.VK_ENTER)
 	err = kb.Launching()
