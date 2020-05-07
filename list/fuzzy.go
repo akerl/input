@@ -2,6 +2,7 @@ package list
 
 import (
 	"github.com/ktr0731/go-fuzzyfinder"
+	"github.com/nsf/termbox-go"
 )
 
 // FuzzyPrompt implements a fuzzy interactive picker
@@ -20,6 +21,6 @@ func (f FuzzyPrompt) Execute(msg string, os OptionSet) (int, error) {
 		lines,
 		handler,
 		fuzzyfinder.WithPromptString(msg+": "),
-		fuzzyfinder.WithPromptColor(fuzzyfinder.ColorDefault),
+		fuzzyfinder.WithPromptColor(termbox.ColorDefault),
 	)
 }
