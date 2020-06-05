@@ -11,6 +11,7 @@ require (
 	github.com/dixonwille/wmenu v4.0.2+incompatible
 	github.com/ktr0731/go-fuzzyfinder v0.0.0-00010101000000-000000000000
 	github.com/mattn/go-isatty v0.0.12 // indirect
-	github.com/stretchr/testify v1.5.1 // indirect
+	github.com/nsf/termbox-go v0.0.0-20200418040025-38ba6e5628f1
+	github.com/stretchr/testify v1.6.1 // indirect
 	gopkg.in/dixonwille/wlog.v2 v2.0.0 // indirect
 )
