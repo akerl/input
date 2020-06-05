@@ -1,9 +1,10 @@
 package list
 
 import (
+	"fmt"
 	"os"
 
-	"github.com/dixonwille/wmenu"
+	"github.com/dixonwille/wmenu/v5"
 )
 
 // WmenuPrompt implements a wmenu-based prompt
@@ -17,8 +18,12 @@ func (w WmenuPrompt) Execute(msg string, optSet OptionSet) (int, error) {
 	menu := wmenu.NewMenu(msg + ":")
 	menu.ChangeReaderWriter(os.Stdin, os.Stderr, os.Stderr)
 	menu.LoopOnInvalid()
+	menu.InitialIndex(0)
 
 	actionFunc := func(opts []wmenu.Opt) error {
+		if opts[0].ID == -1 {
+			return fmt.Errorf("no response provided")
+		}
 		c <- opts[0].ID
 		return nil
 	}
