@@ -17,9 +17,15 @@ type Option struct {
 
 // Types provides a map of prompt types by name
 var Types = map[string]func() Prompt{
-	"":      func() Prompt { return WmenuPrompt{} },
-	"wmenu": func() Prompt { return WmenuPrompt{} },
-	"fuzzy": func() Prompt { return FuzzyPrompt{} },
+	"": func() Prompt {
+		return WmenuPrompt{}
+	},
+	"wmenu": func() Prompt {
+		return WmenuPrompt{}
+	},
+	"fuzzy": func() Prompt {
+		return FuzzyPrompt{}
+	},
 }
 
 // Default returns the default Prompt type
