@@ -1,3 +1,2 @@
 PACKAGE = input
-NAMESPACE = github.com/akerl
 LIB_ONLY = true
