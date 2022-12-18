@@ -1,7 +1,7 @@
 input
 =========
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/akerl/input/Build)](https://github.com/akerl/input/actions)
+[![GitHub Workflow Status](https://img.shields.io/actions/github/workflow/status/akerl/input/build.yml?branch=main)](https://github.com/akerl/input/actions)
 [![GitHub release](https://img.shields.io/github/release/akerl/input.svg)](https://github.com/akerl/input/releases)
 [![License](https://img.shields.io/github/license/akerl/input)](https://github.com/akerl/input/blob/master/LICENSE)
 
